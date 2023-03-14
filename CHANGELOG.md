@@ -4,9 +4,19 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- Support specify `-DSDKCONFIG_DEFAULTS` for `idf.py build`
+  - via CLI option `--sdkconfig-defaults`
+  - via environment variable `SDKCONFIG_DEFAULTS`
+
 ### Fixed
 
 - Stop writing `app_info` and `size_info` if the build got skipped
+
+### Breaking Changes
+
+- Environment variable expansions in sdkconfig files is no longer supported
 
 ## [0.4.0]
 
